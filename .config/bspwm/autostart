@@ -1,0 +1,5 @@
+#!/bin/sh
+pgrep redshift || redshift &
+
+~/.config/conky/start-conky.sh &
+firefox --class="init_firefox" &
