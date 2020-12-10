@@ -10,4 +10,5 @@ My BSPWM dotfiles
 
 # inspirations:
 - [Arch logo](https://gist.github.com/LnLcFlx/18eb10bc74ed9e497d0fedc69468f933)
-- [B4skyx](https://github.com/b4skyx/dotfiles)
+- [adi1090x polybar](https://github.com/adi1090x/polybar-themes)
+- [B4skyxs dotfiles](https://github.com/b4skyx/dotfiles)
