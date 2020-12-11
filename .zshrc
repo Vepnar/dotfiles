@@ -53,7 +53,7 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-# Automaticly start bspwm
+# Automaticly start bspwm on startup
 if [ "$(tty)" = /dev/tty1 ]; then
     exec startx
 fi
@@ -63,7 +63,7 @@ alias vim='nvim'
 alias py='python'
 alias ls='ls --color=auto'
 alias vim='nvim'
-alias icat='kitty +kitten icat'
+alias icat='kitty +kitten icat' # buildin image viewer
 alias build='docker-compose up --build'
 alias todo='nvim ~/todo.md'
 alias notes='nvim ~/notes.md'
