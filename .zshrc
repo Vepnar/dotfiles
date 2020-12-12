@@ -67,3 +67,7 @@ alias icat='kitty +kitten icat' # buildin image viewer
 alias build='docker-compose up --build'
 alias todo='nvim ~/todo.md'
 alias notes='nvim ~/notes.md'
+
+# Function Aliases
+anotes() echo "$*" >> ~/notes.md
+atodo() echo "$*" >> ~/todo.md
