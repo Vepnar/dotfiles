@@ -159,6 +159,13 @@ Print
 Print + alt
 	maim -s -u | xclip -selection clipboard -t image/png -i
 
+# Store screenshot in directory
+Print + ctrl
+	maim ~/Images/screenshots/$(date '+%Y-%m-%d_%H:%M').png
+
+# Store screenshot in directory with area selector
+Print + ctrl
+	maim -s ~/Images/screenshots/$(date '+%Y-%m-%d_%H:%M').png
 
 ########### Dropdowns ###########
 
