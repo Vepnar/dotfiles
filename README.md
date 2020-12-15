@@ -23,6 +23,12 @@ My BSPWM dotfiles
 | Compositer        | picom        |
 | Terminal emulator | Kitty        |
 
+## Screenshots
+
+![Fetch](/screenshots/fetch.png)
+![Audio control](/screenshots/pulseaudio.png)
+![Widgets](/screenshots/widgets.png)
+
 ## inspirations:
 - [Arch logo](https://gist.github.com/LnLcFlx/18eb10bc74ed9e497d0fedc69468f933)
 - [adi1090x polybar](https://github.com/adi1090x/polybar-themes)
