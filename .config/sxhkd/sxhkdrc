@@ -12,6 +12,7 @@ super + @space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+	sxhkd &
 
 super + shift + Escape
 	~/.config/polybar/launch.sh
@@ -110,23 +111,11 @@ super + ctrl + shift + space
 
 ########### Movement / Resize ###########
 
-# resize
-super + e : {Left, Down, Up, Right}
-    bspwm_resize expand {west,south,north,east} 25
-
-super + shift + e : {Left, Down, Up, Right}
-    bspwm_resize contract {east,north,south,west} 25
-
-super + alt + {Left, Down, Up, Right}
-    bspwm_resize expand {west,south,north,east} 25
-
-super + alt + ctrl + {Left, Down, Up, Right}
-    bspwm_resize contract {east,north,south,west} 25
-
-# move a floating window
-super + alt + {Left, Down, Up, Right}
-	bspc node -v {-50 0,0 50,0 -50,50 0}
-
+# Resize selected window
+super + s : {h,j,k,l}
+    STEP=40; SELECTION={1,2,3,4}; \
+    bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+    bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
 ########### Keyboard settings ###########
 
