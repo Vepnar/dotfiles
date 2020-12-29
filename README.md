@@ -22,6 +22,7 @@ My BSPWM dotfiles
 | Launcher          | Rolfi        |
 | Compositer        | picom        |
 | Terminal emulator | Kitty        |
+| Wallpaper         | [Dynamic wallpapers](https://github.com/adi1090x/dynamic-wallpaper) |
 
 ## Screenshots
 
