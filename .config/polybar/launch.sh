@@ -5,7 +5,7 @@ killall -q polybar
 
 while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
-export interface=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
+export INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
 
 # Polybar run on every monitor
 if type "xrandr"; then
