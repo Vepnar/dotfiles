@@ -6,8 +6,6 @@ xsetroot -cursor_name left_ptr &
 sxhkd &
 picom --experimental-backends &
 dunst &
-feh --bg-fill .config/wallpaper.png &
-
 # Start polybar
 ~/.config/polybar/launch.sh &
 

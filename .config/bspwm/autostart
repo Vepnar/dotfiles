@@ -3,3 +3,7 @@ pgrep redshift || redshift &
 
 ~/.config/conky/start-conky.sh &
 firefox --class="init_firefox" &
+
+# https://github.com/adi1090x/dynamic-wallpaper
+# Autostart the wallpaper
+dwall -s mountains &
