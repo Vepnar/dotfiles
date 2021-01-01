@@ -111,6 +111,23 @@ super + ctrl + shift + space
 
 ########### Movement / Resize ###########
 
+# resize
+super + e : {Left, Down, Up, Right}
+    bspwm_resize expand {west,south,north,east} 25
+
+super + shift + e : {Left, Down, Up, Right}
+    bspwm_resize contract {east,north,south,west} 25
+
+super + alt + {Left, Down, Up, Right}
+    bspwm_resize expand {west,south,north,east} 25
+
+super + alt + ctrl + {Left, Down, Up, Right}
+    bspwm_resize contract {east,north,south,west} 25
+
+# move a floating window
+super + alt + {Left, Down, Up, Right}
+	bspc node -v {-50 0,0 50,0 -50,50 0}
+
 # Resize selected window
 super + s : {h,j,k,l}
     STEP=40; SELECTION={1,2,3,4}; \
@@ -153,7 +170,7 @@ Print + ctrl
 	maim ~/Images/screenshots/$(date '+%Y-%m-%d_%H:%M').png
 
 # Store screenshot in directory with area selector
-Print + ctrl
+Print + ctrl + alt
 	maim -s ~/Images/screenshots/$(date '+%Y-%m-%d_%H:%M').png
 
 ########### Dropdowns ###########
